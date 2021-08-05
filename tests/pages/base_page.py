@@ -19,4 +19,9 @@ class BasePage:
 
         return True
 
+    def url_has_substring(self, str):
+        url = self.browser.current_url
+        return str in url
+
+
 
